@@ -4,11 +4,7 @@ import socket
 from email.mime.text import MIMEText
 from typing import Optional
 
-# from config import SMTP_EMAIL, SMTP_PASSWORD
 from config import get_smtp_config
-
-smtp_email, smtp_password = get_smtp_config()
-
 
 SMTP_HOST = "smtp.gmail.com"
 SMTP_PORT = 465
@@ -30,8 +26,7 @@ def send_email(
     Sends an email safely.
     Returns True if sent, False if failed.
     """
-
-    smtp_email, smtp_password = get_smtp_config()  # ✅ ADD THIS
+    smtp_email, smtp_password = get_smtp_config()
     if not to or not subject or not body:
         msg = "Invalid email payload (to/subject/body)"
         if raise_on_failure:

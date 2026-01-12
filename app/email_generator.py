@@ -2,9 +2,7 @@
 # email_generator.py
 import requests
 from requests.exceptions import RequestException, Timeout
-# from config import OPENROUTER_API_KEY, OPENROUTER_MODEL
 from config import get_openrouter_config
-cfg = get_openrouter_config()
 
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
 TIMEOUT_SECONDS = 25
@@ -15,6 +13,7 @@ class EmailGenerationError(Exception):
 
 
 def _call_openrouter(prompt: str, temperature: float):
+    cfg = get_openrouter_config()
     try:
         response = requests.post(
             OPENROUTER_URL,
@@ -91,38 +90,6 @@ def _parse_subject_body(content: str):
 def generate_email(lead, followup=False, previous_emails=""):
     try:
         if not followup:
-            # prompt = f"""
-            #     You are a senior B2B outreach copywriter writing on behalf of Hexanova MediaTech.
-
-            #     STRICT OUTPUT CONTRACT:
-            #     Return ONLY in this format:
-
-            #     SUBJECT:
-            #     <subject>
-
-            #     BODY:
-            #     <body>
-
-            #     Rules:
-            #     - 60–80 words
-            #     - Calm, human, non-salesy
-            #     - One subtle situational tension
-            #     - No service listing
-            #     - End exactly with:
-
-            #     Best regards,
-            #     Hexanova MediaTech
-
-            #     Lead:
-            #     Name: {lead.name}
-            #     Company: {lead.company}
-            #     Industry: {lead.industry}
-
-            #     Internal context (do not quote):
-            #     {lead.pain_points}
-            # """
-            
-
             prompt = f"""
 You are a senior B2B outreach copywriter writing on behalf of Hexanova MediaTech.
 

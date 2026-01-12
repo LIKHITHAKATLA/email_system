@@ -1,9 +1,8 @@
-# main.py
 import time
 import sys
 
-from database import engine
-from models import Base
+from database import engine, Base
+
 from lead_ingestion import ingest_leads
 from initial_sender import generate_initial_drafts
 from followup_scheduler import start_scheduler
@@ -104,3 +103,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+

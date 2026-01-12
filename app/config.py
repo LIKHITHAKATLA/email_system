@@ -1,62 +1,3 @@
-# # config.py
-# import os
-# from dotenv import load_dotenv
-
-# try:
-#     load_dotenv()
-# except Exception as e:
-#     raise RuntimeError(f"Failed to load environment variables: {e}")
-
-# def get_env(key, default=None, required=False):
-#     value = os.getenv(key, default)
-
-#     if isinstance(value, str):
-#         value = value.strip()
-#         if value == "":
-#             value = None
-
-#     if required and value is None:
-#         raise RuntimeError(f"Missing required environment variable: {key}")
-
-#     return value
-
-
-# # -------------------- OpenRouter --------------------
-# OPENROUTER_API_KEY = get_env("OPENROUTER_API_KEY", required=True)
-# OPENROUTER_MODEL = get_env("OPENROUTER_MODEL", required=True)
-
-
-# # -------------------- PostgreSQL --------------------
-# try:
-#     POSTGRES_CONFIG = {
-#         "host": get_env("POSTGRES_HOST", required=True),
-#         "port": int(get_env("POSTGRES_PORT", 5432)),
-#         "user": get_env("POSTGRES_USER", required=True),
-#         "password": get_env("POSTGRES_PASSWORD", required=True),
-#         "database": get_env("POSTGRES_DB", required=True),
-#     }
-# except ValueError:
-#     raise RuntimeError("POSTGRES_PORT must be a valid integer")
-
-
-# # -------------------- SMTP --------------------
-# SMTP_EMAIL = get_env("SMTP_EMAIL")
-# SMTP_PASSWORD = get_env("SMTP_PASSWORD")
-
-# if bool(SMTP_EMAIL) ^ bool(SMTP_PASSWORD):
-#     raise RuntimeError("SMTP_EMAIL and SMTP_PASSWORD must be set together")
-
-
-# # -------------------- IMAP --------------------
-# IMAP_EMAIL = get_env("IMAP_EMAIL")
-# IMAP_PASSWORD = get_env("IMAP_PASSWORD")
-
-# if bool(IMAP_EMAIL) ^ bool(IMAP_PASSWORD):
-#     raise RuntimeError("IMAP_EMAIL and IMAP_PASSWORD must be set together")
-
-
-
-
 # app/config.py
 import os
 from dotenv import load_dotenv
@@ -80,8 +21,10 @@ def get_openrouter_config():
     model = get_env("OPENROUTER_MODEL")
 
     if not api_key or not model:
-        raise RuntimeError("OpenRouter environment variables are missing")
-
+        raise RuntimeError(
+            "OPENROUTER_API_KEY and OPENROUTER_MODEL are required. "
+            "Please set them in Railway's environment variables or in a .env file for local development."
+        )
     return {
         "api_key": api_key,
         "model": model,
