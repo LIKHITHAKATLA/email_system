@@ -1,0 +1,35 @@
+{
+  "count": 3,
+  "leads": [
+    {
+      "name": "John Brancaccio",
+      "email": "sklp.katla2001@gmail.com",
+      "company": "Financial Capital Network",
+      "industry": "Digital Marketing & Technology Services",
+      "pain_points": "Struggling to maintain compliant, server-side data accuracy across the high-value client funnel, leading to mistrust in attribution data used to justify significant financial marketing investments. | Technical limitations in the current MarTech stack preventing the implementation of advanced, personalized lead scoring and cross-channel automation necessary to efficiently scale high-quality client acquisition. | As both CMO and CTO, balancing the urgency of rapid campaign deployment (CMO mandate) with the technical requirement for robust, high-performance, and secure infrastructure (CTO mandate) without accumulating technical debt.",
+      "conversation_opener": "Hi John, noticing your unique CMO | CTO title at Financial Capital Network, I’m curious how you balance the pressure for rapid growth execution with the need for robust, compliant technical infrastructure that often hinders speed.",
+      "negotiation_angle": "Focus on the convergence of technical risk mitigation and revenue certainty. Frame our value proposition around implementing an audited, performance-driven MarTech stack that guarantees data integrity (appealing to the CTO role) which then drives predictable and scalable return on ad spend (ROAS) (appealing to the CMO role). Key metrics: Data Accuracy Rate, Reduction in CAC, and Time-to-Market for critical campaigns.",
+      "received_at": "2026-01-07T17:35:32.954278"
+    },
+    {
+      "name": "Arny Pollack",
+      "email": "likhithasathish1719@gmail.com",
+      "company": "Hydro Empire",
+      "industry": "Digital Strategy & Growth Consulting / AdTech Services",
+      "pain_points": "The technical infrastructure (CTO function) is not providing the unified, real-time data necessary for high-impact performance marketing decisions (CMO function), leading to siloed efforts and poor cross-channel attribution. | Balancing the pressure for aggressive revenue growth (CMO target) with the need for stable, scalable, and personalized technology development (CTO requirement), resulting in trade-offs that slow down critical CRO or technical SEO initiatives. | Facing high Customer Acquisition Costs (CAC) because paid media campaigns lack the deep technical integration needed for predictive audience segmentation and advanced personalization across the Hydro Empire digital ecosystem.",
+      "conversation_opener": "Arny, running both the technology stack and revenue generation for Hydro Empire must mean your biggest challenge is consistently integrating attribution and performance data in real-time. How are you currently ensuring your technical investments directly translate into measurable, scalable marketing ROI?",
+      "negotiation_angle": "Focus on integrated measurable results: specifically maximizing Return on Ad Spend (ROAS) and Lifetime Value (LTV) by leveraging improved technical infrastructure and advanced attribution modeling. Frame Hexanova as the strategic partner who accelerates Time-to-Value (TTV) on technical investments while providing a predictable path to significantly reducing Customer Acquisition Costs (CAC). Decisions will be motivated by proof of concept showing technical excellence directly leading to sustained revenue predictability and operational efficiency.",
+      "received_at": "2026-01-07T17:41:09.196696"
+    },
+    {
+      "name": "Steve Warwick",
+      "email": "agsamruth@gmail.com",
+      "company": "Hearing at Home, LLC",
+      "industry": "Digital Strategy & Growth Consulting / AdTech Services",
+      "pain_points": "Inaccurate or delayed marketing attribution for complex, high-value conversion paths (e.g., ad click -> educational content -> consultation booking) leading to inefficient allocation of digital advertising spend, especially where CAC is high. | The current technology stack struggles to seamlessly integrate marketing data (performance media) with web development and CRO efforts, creating fragmentation that hinders the ability to execute rapid, personalized patient journeys critical for 'Hearing at Home'. | Balancing the need for rapid scaling of patient acquisition (CMO goal) with the requirement to maintain a high LTV:CAC ratio, often limited by the internal lack of specialized, integrated expertise across technical SEO and advanced data analytics.",
+      "conversation_opener": "Steve, given your CMO/CTO role at Hearing at Home, I imagine you are constantly trying to unify the data that drives paid media ROI with the technical systems that support patient personalization. Are you currently satisfied with the clarity you have between your acquisition budget and true long-term patient value?",
+      "negotiation_angle": "Focus on the consolidated economic value of integration. Since Steve holds both financial accountability (CMO) and infrastructure responsibility (CTO), frame value around maximizing the LTV:CAC ratio through technological efficiency. Focus on tangible ROI improvements, guaranteed time-to-value for technology deployments, and the reduced internal operational complexity achieved by having unified performance marketing and technical development partners.",
+      "received_at": "2026-01-07T17:41:47.165574"
+    }
+  ]
+}
